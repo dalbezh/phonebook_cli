@@ -37,7 +37,7 @@ phonebook = CSVPhonebook(CSV_FILE)
 
 
 def pagination(per_page: int = ITEMS_PER_PAGE, page: int = 0) -> Union[PrettyTable, str]:
-    """Вспомогательная функция для отображения списка справочника"""
+    """Функция для постраничного отображения списка справочника"""
     page_index = page - 1
     pg_result = Pagination(collection=phonebook.get_all, items_per_page=per_page)
     try:
@@ -79,10 +79,10 @@ def update_field(id: int):
             print(fieldname)
             new_data = input("Now, input new field value: ")
             if int(field_number) not in range(6, 7):
-                updater = phonebook.update(id=id, fieldname=fieldname, data=new_data.title())
+                update_data = phonebook.update(id=id, fieldname=fieldname, data=new_data.title())
             else:
                 raise ValueError
-            return updater
+            return update_data
         else:
             print("number from 1 to 6!")
     except ValueError:
