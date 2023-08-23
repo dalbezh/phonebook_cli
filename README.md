@@ -12,7 +12,7 @@
 $ python3 main.py --help
 ```
 ```commandline
-usage: Phonebook CLI [-h] [-c CREATE CREATE CREATE] [-u UPDATE] [-d DELETE] [-s SEARCH] [-p PAGE]
+usage: python3 main.py [-h] [-c CREATE CREATE CREATE] [-u UPDATE] [-d DELETE] [-s SEARCH] [-p PAGE]
 
 Программа CRUD для записей в телефонном справочнике
 
