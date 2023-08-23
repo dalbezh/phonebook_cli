@@ -20,8 +20,7 @@ if CSV_FILE.stat().st_size >= 10485760:
 
 parser = ArgumentParser(
     prog='Phonebook CLI',
-    description='Программа CRUD для записей в телефонном справочнике',
-    epilog='help__'
+    description='Программа CRUD для записей в телефонном справочнике'
 )
 
 parser.add_argument('-c', '--create', help='Create entry', action='store', nargs=3)
