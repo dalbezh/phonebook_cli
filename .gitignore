@@ -164,3 +164,7 @@ cython_debug/
 old_code.py
 re_patterns_and_test.py
 phonebook_test.csv
+
+#Test cacshe
+.mypy_cache
+.ruff_cache
