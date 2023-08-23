@@ -19,7 +19,7 @@ if CSV_FILE.stat().st_size >= 10485760:
     sys.exit(f"File {CSV_FILE} larger than 10 MB !")
 
 parser = ArgumentParser(
-    prog='Phonebook CLI',
+    prog='python3 main.py',
     description='Программа CRUD для записей в телефонном справочнике'
 )
 
