@@ -70,8 +70,8 @@ def create_entry(args_data: list):
 
 def update_field(id: int):
     """Функция для обновления данных"""
-    for x in enumerate(FIELDNAMES[1:]):
-        print(x[0] + 1, x[1])
+    for field in enumerate(FIELDNAMES[1:]):
+        print(field[0] + 1, field[1])
     try:
         field_number = input("Input a number from 1 to 6 for the field you want to change: ")
         if int(field_number) in range(1, 7):

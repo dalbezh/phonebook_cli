@@ -22,7 +22,7 @@ class CSVPhonebook:
     def get_all(self) -> list[list]:
         """
         Возвращает все элементы таблицы
-        DictReader выбран с тем условием, что он читает имена колонок и не сохраняет их в результат.
+        DictReader выбран с тем условием, что он читает имена колонок.
         """
         with open(file=self.file, mode='r', newline='', encoding=self.encoding) as csvfile:
             reader: csv.DictReader = csv.DictReader(csvfile)
