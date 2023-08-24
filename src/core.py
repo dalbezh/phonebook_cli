@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import csv
 import re
 from pathlib import Path
@@ -7,9 +5,8 @@ from typing import List, Union
 
 from pydantic_extra_types.phone_numbers import PhoneNumber
 
+from .constants import FIELDNAMES
 from .validator import CreateField, PhoneField
-
-FIELDNAMES = ('id', 'last_name', 'first_name', 'middle_name', 'organization', 'work_phone', 'personal_phone')
 
 
 class CSVPhonebook:
