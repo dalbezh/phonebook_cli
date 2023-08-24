@@ -4,8 +4,8 @@ from typing import Union
 
 from prettytable import PrettyTable
 
-from .constants import CSV_FILE
-from .core import CSVPhonebook, FIELDNAMES
+from .constants import CSV_FILE, FIELDNAMES
+from .core import CSVPhonebook
 from .pagination import Pagination
 from .validator import CreateField
 
