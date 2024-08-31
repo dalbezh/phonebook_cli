@@ -1,4 +1,4 @@
-from typing import Union
+from typing import Union, Optional
 
 from pydantic import BaseModel
 from pydantic_extra_types.phone_numbers import PhoneNumber
@@ -9,9 +9,9 @@ class CreateField(BaseModel):
     id: int
     last_name: str
     first_name: str
-    middle_name: str = ""
-    organization: str = ""
-    work_phone: str = ""
+    middle_name: Optional[str] = ""
+    organization: Optional[str] = ""
+    work_phone: Optional[str] = ""
     personal_phone: PhoneNumber
 
 
